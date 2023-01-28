@@ -1,6 +1,6 @@
 # DSD: Densest Subgraph Discovery
 
-This repository implements the densest subgraph algorithm proposed in our VLDB 2019 paper.
+This repository implements the densest subgraph discovery algorithm proposed in our VLDB 2019 paper.
 <pre>
 Yixiang Fang, Kaiqiang Yu, Reynold Cheng, Laks V.S. Lakshmanan, Xuemin Lin.
 <a href="http://www.vldb.org/pvldb/vol12/p1719-fang.pdf">Efficient Algorithms for Densest Subgraph Discovery.</a>
