@@ -26,8 +26,8 @@ Proc. VLDB Endow. 12(11), (2019)
                 |- CDSdecomposite.java      // (k,\phi)-core decomposition
                 |- KList.java               // list all edges/k-cliques
                 |- TDCDS.java               // CoreApp for CDS
-                |- ExactTest.java           // Running examples
-                |- AppTest.java             // Running examples
+                |- ExactTest.java           // Running examples for CoreExact and Exact
+                |- AppTest.java             // Running examples for CoreApp, IncApp and PeelApp
             |- exist
                 |- Appalgo.java             // IncApp and CoreApp for CDS and PDS
                 |- DynamicExactalgo.java    // CoreExact for CDS and PDS
