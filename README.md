@@ -1,6 +1,6 @@
 # DSD: Densest Subgraph Discovery
 
-This repository implements the densest subgraph discovery algorithm proposed in our VLDB 2019 paper.
+This repository implements the densest subgraph algorithm proposed in our VLDB 2019 paper.
 <pre>
 Yixiang Fang, Kaiqiang Yu, Reynold Cheng, Laks V.S. Lakshmanan, Xuemin Lin.
 <a href="http://www.vldb.org/pvldb/vol12/p1719-fang.pdf">Efficient Algorithms for Densest Subgraph Discovery.</a>
@@ -12,10 +12,32 @@ Proc. VLDB Endow. 12(11), (2019)
 .
 |- README.md                                                    
 |- kds
-    |- datasets/			 
-    |- motif/			
-    |- result/			
-    |- src/                       
+    |- datasets                     // Two example graphs
+        |- graph.txt
+        |- test.txt 			 
+    |- motif
+        |- ...                      // Edges/cliques/patterns			
+    |- result
+        |- ...                      // Experimental results			
+    |- src/hku                      // Source code
+        |- util                     // Graph processing procedures (e.g., core decomposition)
+        |- algo                     // Implementation of our algorithms
+            |- cds                  // algorithms for Clique-based Density Subgraph (CDS) Discovery
+                |- CDSdecomposite.java      // (k,\phi)-core decomposition
+                |- KList.java               // list all edges/k-cliques
+                |- TDCDS.java               // CoreApp for CDS
+                |- ExactTest.java           // Running examples
+                |- AppTest.java             // Running examples
+            |- exist
+                |- Appalgo.java             // IncApp and CoreApp for CDS and PDS
+                |- DynamicExactalgo.java    // CoreExact for CDS and PDS
+                |- Exact.java               // Exact for CDS and PDS
+                |- ...
+            |- maxflow                      // Max-flow solver
+            |- findgeneralpattern           // list general patterns
+            |- pdscoredecompose             // k-pattern core decomposition
+            |- pdsenumeration               // list some special patterns 
+            |- prune                        // Pruning techniques
 ```
 
 
